@@ -683,6 +683,95 @@
 </span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="p">}</span>
 </span></code></pre></div>
 </details>
+<details>
+<summary>Second approach</summary>
+<p>Previous approach is pretty wasteful. If have a bunch of <code>pop</code> one after another, we are shifting elements back and forth between <span class="arithmatex">\(\text{stack} \leftrightarrow \text{aux}\)</span>.</p>
+<p>Approach here is to:</p>
+<ul>
+<li>always <code>push</code> to <span class="arithmatex">\(\text{stack}\)</span>.</li>
+<li>and always <code>pop</code> from <span class="arithmatex">\(\text{aux}\)</span>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>operation</th>
+<th><span class="arithmatex">\(\text{stack}\)</span></th>
+<th><span class="arithmatex">\(\text{aux}\)</span></th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span class="arithmatex">\((]\)</span></td>
+<td><span class="arithmatex">\((]\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>enqueue(1)</code></td>
+<td><span class="arithmatex">\((1]\)</span></td>
+<td><span class="arithmatex">\((]\)</span></td>
+<td>always <code>push</code> to <span class="arithmatex">\(\text{stack}\)</span></td>
+</tr>
+<tr>
+<td><code>enqueue(2)</code></td>
+<td><span class="arithmatex">\((2, 1]\)</span></td>
+<td><span class="arithmatex">\((]\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>enqueue(3)</code></td>
+<td><span class="arithmatex">\((3, 2, 1]\)</span></td>
+<td><span class="arithmatex">\((]\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>dequeue()</code></td>
+<td><span class="arithmatex">\((]\)</span></td>
+<td><span class="arithmatex">\((1, 2, 3]\)</span><br><span class="arithmatex">\((\fbox{1}, 2, 3]\)</span><br><span class="arithmatex">\((2, 3]\)</span></td>
+<td>since <span class="arithmatex">\(\text{aux}\)</span> is empty, <span class="arithmatex">\(\text{stack} \rightarrow \text{aux}\)</span><br><code>pop</code> from <span class="arithmatex">\(\text{aux}\)</span></td>
+</tr>
+<tr>
+<td><code>dequeue()</code></td>
+<td><span class="arithmatex">\((]\)</span></td>
+<td><span class="arithmatex">\((\fbox{2},3]\)</span><br><span class="arithmatex">\((3]\)</span></td>
+<td>since <span class="arithmatex">\(\text{aux}\)</span> is <strong>not</strong> empty <br>simply <code>pop</code> from <span class="arithmatex">\(\text{aux}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">class</span><span class="w"> </span><span class="nc">MyQueue</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="nv">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ArrayDeque</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="kd">val</span><span class="w"> </span><span class="nv">aux</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ArrayDeque</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="kd">fun</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="n">stack</span><span class="p">.</span><span class="na">push</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="kd">fun</span><span class="w"> </span><span class="nf">pop</span><span class="p">():</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">aux</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="n">stack</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">aux</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">aux</span><span class="p">.</span><span class="na">pop</span><span class="p">()</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span><span class="kd">fun</span><span class="w"> </span><span class="nf">peek</span><span class="p">():</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">aux</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">      </span><span class="n">stack</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">aux</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">aux</span><span class="p">.</span><span class="na">peek</span><span class="p">()</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="kd">fun</span><span class="w"> </span><span class="nf">empty</span><span class="p">():</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stack</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">aux</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">()</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="p">}</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="kd">infix</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="nf">util</span><span class="p">.</span><span class="na">ArrayDeque</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">.</span><span class="na">to</span><span class="p">(</span><span class="n">dest</span><span class="p">:</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">ArrayDeque</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">isNotEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="n">dest</span><span class="p">.</span><span class="na">push</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">pop</span><span class="p">())</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="p">}</span>
+</span></code></pre></div>
+</details>
 
 
 
