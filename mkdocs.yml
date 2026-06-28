@@ -1,1 +1,46 @@
-site_name: My Docs
+site_name: Algorithms & Data Structures
+site_url: https://lgopractice.github.io/
+theme:
+  name: material
+  font:
+    text: "CT"
+    code: "Google Sans Code Medium"
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+  # Setup for theme switch https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette-toggle
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  icon:
+    admonition:
+      tip: material/lightning-bolt
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - assets/custom.css
+
+nav:
+  - Stack: 
+    - Introduction: "stack/index.md"
