@@ -1,0 +1,989 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lgopractice.github.io/stack/problems/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Problems - Algorithms & Data Structures</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M11%2015H6l7-14v8h5l-7%2014z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=CT:300,300i,400,400i,700,700i%7CGoogle+Sans+Code+Medium:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"CT";--md-code-font:"Google Sans Code Medium"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/custom.css">
+    
+      <link rel="stylesheet" href="../../assets/spoilers.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#problems" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Algorithms &amp; Data Structures" class="md-header__button md-logo" aria-label="Algorithms & Data Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Algorithms & Data Structures
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Problems
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Algorithms &amp; Data Structures" class="md-nav__button md-logo" aria-label="Algorithms & Data Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Algorithms & Data Structures
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stack
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stack
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problems
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tier-1-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 1 — Foundations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-2-monotonic-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 2 — Monotonic Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-3-stack-for-parsing-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 3 — Stack for Parsing &amp; Simulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-4-hard-interview-grade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 4 — Hard / Interview-Grade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-5-design-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 5 — Design Problems
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tier-1-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 1 — Foundations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-2-monotonic-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 2 — Monotonic Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-3-stack-for-parsing-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 3 — Stack for Parsing &amp; Simulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-4-hard-interview-grade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 4 — Hard / Interview-Grade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tier-5-design-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 5 — Design Problems
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="problems">Problems</h1>
+<style>
+.md-typeset table th:first-child,
+.md-typeset table td:first-child {
+  width: 50px;
+  min-width: 50px;
+  white-space: nowrap;
+}
+</style>
+
+<h3 id="tier-1-foundations">Tier 1 — Foundations</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Problem</th>
+<th>LC #</th>
+<th>Pattern Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Implement Stack using Array / Linked List</td>
+<td>—</td>
+<td><span class="spoiler">Build it from scratch</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Valid Parentheses</td>
+<td><a href="https://leetcode.com/problems/valid-parentheses/">20</a></td>
+<td><span class="spoiler">Matching pairs</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Implement Queue using Two Stacks</td>
+<td><a href="https://leetcode.com/problems/implement-queue-using-stacks/">232</a></td>
+<td><span class="spoiler">Two-stack interplay</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Implement Stack using Two Queues</td>
+<td><a href="https://leetcode.com/problems/implement-stack-using-queues/">225</a></td>
+<td><span class="spoiler">Reverse of the above</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Min Stack</td>
+<td><a href="https://leetcode.com/problems/min-stack/">155</a></td>
+<td><span class="spoiler">Tracking auxiliary state</span></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Baseball Game</td>
+<td><a href="https://leetcode.com/problems/baseball-game/">682</a></td>
+<td><span class="spoiler">Stack as a live scoreboard</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Backspace String Compare</td>
+<td><a href="https://leetcode.com/problems/backspace-string-compare/">844</a></td>
+<td><span class="spoiler">Stack as a "running result"</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Remove Outermost Parentheses</td>
+<td><a href="https://leetcode.com/problems/remove-outermost-parentheses/">1021</a></td>
+<td><span class="spoiler">Depth tracking</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="tier-2-monotonic-stack">Tier 2 — Monotonic Stack</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Problem</th>
+<th>LC #</th>
+<th>Pattern Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>Next Greater Element I</td>
+<td><a href="https://leetcode.com/problems/next-greater-element-i/">496</a></td>
+<td><span class="spoiler">Entry point to the pattern</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Next Greater Element II — circular array</td>
+<td><a href="https://leetcode.com/problems/next-greater-element-ii/">503</a></td>
+<td><span class="spoiler">How to handle wrap-around</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Daily Temperatures</td>
+<td><a href="https://leetcode.com/problems/daily-temperatures/">739</a></td>
+<td><span class="spoiler">Variation on NGE</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Previous Smaller Element</td>
+<td><a href="https://www.geeksforgeeks.org/dsa/previous-smaller-element/">GFG</a></td>
+<td><span class="spoiler">Left-pass mirror of NGE</span></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Final Prices With a Special Discount</td>
+<td><a href="https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/">1475</a></td>
+<td><span class="spoiler">NGE in disguise, easy warm-up</span></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Next Greater Node in Linked List</td>
+<td><a href="https://leetcode.com/problems/next-greater-node-in-linked-list/">1019</a></td>
+<td><span class="spoiler">Same pattern, different input structure</span></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Online Stock Span</td>
+<td><a href="https://leetcode.com/problems/online-stock-span/">901</a></td>
+<td><span class="spoiler">Streaming / online version</span></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Buildings Facing Sun</td>
+<td><a href="https://www.geeksforgeeks.org/dsa/buildings-facing-the-sun/">GFG</a></td>
+<td><span class="spoiler">Right-pass monotonic variant</span></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Sum of Subarray Minimums</td>
+<td><a href="https://leetcode.com/problems/sum-of-subarray-minimums/">907</a></td>
+<td><span class="spoiler">Contribution of each element</span></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Maximum Width Ramp</td>
+<td><a href="https://leetcode.com/problems/maximum-width-ramp/">962</a></td>
+<td><span class="spoiler">Two-pass non-obvious application</span></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Largest Rectangle in Histogram</td>
+<td><a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">84</a></td>
+<td><span class="spoiler">The canonical hard monotonic problem</span></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Maximal Rectangle in Binary Matrix</td>
+<td><a href="https://leetcode.com/problems/maximal-rectangle/">85</a></td>
+<td><span class="spoiler">Problem 19 applied 2-dimensionally</span></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Trapping Rain Water</td>
+<td><a href="https://leetcode.com/problems/trapping-rain-water/">42</a></td>
+<td><span class="spoiler">Can be solved multiple ways; try stack last</span></td>
+</tr>
+<tr>
+<td>22</td>
+<td>Max of Mins for Every Window Size</td>
+<td><a href="https://www.geeksforgeeks.org/dsa/find-the-maximum-of-minimums-for-every-window-size-in-a-given-array/">GFG</a></td>
+<td><span class="spoiler">Window-parameterized variant</span></td>
+</tr>
+<tr>
+<td>23</td>
+<td>Remove K Digits to Make Smallest Number</td>
+<td><a href="https://leetcode.com/problems/remove-k-digits/">402</a></td>
+<td><span class="spoiler">Greedy decision using the pattern</span></td>
+</tr>
+<tr>
+<td>24</td>
+<td>Find the Most Competitive Subsequence</td>
+<td><a href="https://leetcode.com/problems/find-the-most-competitive-subsequence/">1673</a></td>
+<td><span class="spoiler">Constrained version of problem 23</span></td>
+</tr>
+<tr>
+<td>25</td>
+<td>Remove Duplicate Letters</td>
+<td><a href="https://leetcode.com/problems/remove-duplicate-letters/">316</a></td>
+<td><span class="spoiler">Lexicographic greedy with a constraint</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="tier-3-stack-for-parsing-simulation">Tier 3 — Stack for Parsing &amp; Simulation</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Problem</th>
+<th>LC #</th>
+<th>Pattern Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26</td>
+<td>Evaluate Reverse Polish Notation</td>
+<td><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/">150</a></td>
+<td><span class="spoiler">Operand/operator processing</span></td>
+</tr>
+<tr>
+<td>27</td>
+<td>Basic Calculator II</td>
+<td><a href="https://leetcode.com/problems/basic-calculator-ii/">227</a></td>
+<td><span class="spoiler">Operator precedence without parentheses</span></td>
+</tr>
+<tr>
+<td>28</td>
+<td>Basic Calculator I</td>
+<td><a href="https://leetcode.com/problems/basic-calculator/">224</a></td>
+<td><span class="spoiler">Adding parentheses to problem 27</span></td>
+</tr>
+<tr>
+<td>29</td>
+<td>Decode String</td>
+<td><a href="https://leetcode.com/problems/decode-string/">394</a></td>
+<td><span class="spoiler">Nested structure, two stacks</span></td>
+</tr>
+<tr>
+<td>30</td>
+<td>Reverse Substrings Between Each Pair of Parentheses</td>
+<td><a href="https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/">1190</a></td>
+<td><span class="spoiler">Nested reversal</span></td>
+</tr>
+<tr>
+<td>31</td>
+<td>Asteroid Collision</td>
+<td><a href="https://leetcode.com/problems/asteroid-collision/">735</a></td>
+<td><span class="spoiler">Stack as surviving state</span></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Remove All Adjacent Duplicates in String</td>
+<td><a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/">1047</a></td>
+<td><span class="spoiler">Stack as a building result</span></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Remove All Adjacent Duplicates II</td>
+<td><a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/">1209</a></td>
+<td><span class="spoiler">Problem 32 with a count dimension</span></td>
+</tr>
+<tr>
+<td>34</td>
+<td>Score of Parentheses</td>
+<td><a href="https://leetcode.com/problems/score-of-parentheses/">856</a></td>
+<td><span class="spoiler">Value accumulation through nesting</span></td>
+</tr>
+<tr>
+<td>35</td>
+<td>Validate Stack Sequences</td>
+<td><a href="https://leetcode.com/problems/validate-stack-sequences/">946</a></td>
+<td><span class="spoiler">Simulating push/pop to check validity</span></td>
+</tr>
+<tr>
+<td>36</td>
+<td>Simplify Path</td>
+<td><a href="https://leetcode.com/problems/simplify-path/">71</a></td>
+<td><span class="spoiler">Stack on filesystem tokens</span></td>
+</tr>
+<tr>
+<td>37</td>
+<td>Check if a Parentheses String Can Be Valid</td>
+<td><a href="https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/">2116</a></td>
+<td><span class="spoiler">Wildcards + brackets</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="tier-4-hard-interview-grade">Tier 4 — Hard / Interview-Grade</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Problem</th>
+<th>LC #</th>
+<th>Pattern Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>38</td>
+<td>Longest Valid Parentheses</td>
+<td><a href="https://leetcode.com/problems/longest-valid-parentheses/">32</a></td>
+<td><span class="spoiler">Index tracking, not just characters</span></td>
+</tr>
+<tr>
+<td>39</td>
+<td>Sum of Subarray Ranges</td>
+<td><a href="https://leetcode.com/problems/sum-of-subarray-ranges/">2104</a></td>
+<td><span class="spoiler">Extension of Sum of Subarray Minimums</span></td>
+</tr>
+<tr>
+<td>40</td>
+<td>Maximum Score of a Good Subarray</td>
+<td><a href="https://leetcode.com/problems/maximum-score-of-a-good-subarray/">2002</a></td>
+<td><span class="spoiler">Two-pointer meets monotonic stack</span></td>
+</tr>
+<tr>
+<td>41</td>
+<td>Number of Visible People in a Queue</td>
+<td><a href="https://leetcode.com/problems/number-of-visible-people-in-a-queue/">1944</a></td>
+<td><span class="spoiler">Right-to-left monotonic reasoning</span></td>
+</tr>
+<tr>
+<td>42</td>
+<td>Count of Submatrices That Sum to Target</td>
+<td><a href="https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/">1074</a></td>
+<td><span class="spoiler">2D + stack/prefix combo</span></td>
+</tr>
+<tr>
+<td>43</td>
+<td>Largest Rectangle — general shapes</td>
+<td>—</td>
+<td><span class="spoiler">Generalization of problem 19</span></td>
+</tr>
+<tr>
+<td>44</td>
+<td>Check Redundant Brackets</td>
+<td><a href="https://www.geeksforgeeks.org/dsa/redundant-braces/">GFG</a></td>
+<td><span class="spoiler">Operator-aware bracket validation</span></td>
+</tr>
+<tr>
+<td>45</td>
+<td>Expression Add Operators</td>
+<td><a href="https://leetcode.com/problems/expression-add-operators/">282</a></td>
+<td><span class="spoiler">Backtracking + evaluation stack</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="tier-5-design-problems">Tier 5 — Design Problems</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Problem</th>
+<th>LC #</th>
+<th>Pattern Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>46</td>
+<td>Design Stack with Increment Operation</td>
+<td><a href="https://leetcode.com/problems/design-a-stack-with-increment-operation/">1381</a></td>
+<td><span class="spoiler">Lazy updates on a stack</span></td>
+</tr>
+<tr>
+<td>47</td>
+<td>Max Frequency Stack</td>
+<td><a href="https://leetcode.com/problems/maximum-frequency-stack/">895</a></td>
+<td><span class="spoiler">Multi-layered frequency tracking</span></td>
+</tr>
+<tr>
+<td>48</td>
+<td>Design Browser History</td>
+<td><a href="https://leetcode.com/problems/design-browser-history/">1472</a></td>
+<td><span class="spoiler">Two-stack navigation model</span></td>
+</tr>
+<tr>
+<td>49</td>
+<td>LFU / LRU Cache</td>
+<td><a href="https://leetcode.com/problems/lru-cache/">146</a> / <a href="https://leetcode.com/problems/lfu-cache/">460</a></td>
+<td><span class="spoiler">Stack/deque as an eviction policy</span></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../assets/mathjax.js"></script>
+      
+        <script src="../../assets/spoilers.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
