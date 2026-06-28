@@ -13,10 +13,10 @@
 
 | # | Problem | LC # | Pattern Focus |
 |---|---------|------|--------------|
-| 1 | Implement Stack using Array / Linked List | — | <span class="spoiler">Build it from scratch</span> |
-| 2 | Valid Parentheses | [20](https://leetcode.com/problems/valid-parentheses/) | <span class="spoiler">Matching pairs</span> |
-| 3 | Implement Queue using Two Stacks | [232](https://leetcode.com/problems/implement-queue-using-stacks/) | <span class="spoiler">Two-stack interplay</span> |
-| 4 | Implement Stack using Two Queues | [225](https://leetcode.com/problems/implement-stack-using-queues/) | <span class="spoiler">Reverse of the above</span> |
+| 1 | [Implement Stack using Array / Linked List](index.md) | — | <span class="spoiler">Build it from scratch</span> |
+| 2 | [Valid Parentheses](02.md) | [20](https://leetcode.com/problems/valid-parentheses/) | <span class="spoiler">Matching pairs</span> |
+| 3 | [Implement Queue using Two Stacks](03.md) | [232](https://leetcode.com/problems/implement-queue-using-stacks/) | <span class="spoiler">Two-stack interplay</span> |
+| 4 | [Implement Stack using Two Queues](04.md) | [225](https://leetcode.com/problems/implement-stack-using-queues/) | <span class="spoiler">Reverse of the above</span> |
 | 5 | Min Stack | [155](https://leetcode.com/problems/min-stack/) | <span class="spoiler">Tracking auxiliary state</span> |
 | 6 | Baseball Game | [682](https://leetcode.com/problems/baseball-game/) | <span class="spoiler">Stack as a live scoreboard</span> |
 | 7 | Backspace String Compare | [844](https://leetcode.com/problems/backspace-string-compare/) | <span class="spoiler">Stack as a "running result"</span> |

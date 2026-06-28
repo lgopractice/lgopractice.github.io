@@ -57,3 +57,7 @@ nav:
   - Stack: 
     - Introduction: "stack/index.md"
     - Problems: "stack/problems.md"
+    - Foundations: 
+      - Valid Parentheses: "stack/02.md"
+      - Implement Queue using Two Stacks: "stack/03.md"
+      - Implement Stack using Queues: "stack/04.md"
