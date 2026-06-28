@@ -41,14 +41,19 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.arithmatex:
       generic: true
+  - attr_list
+  - pymdownx.mark
 
 extra_javascript:
   - assets/mathjax.js
+  - assets/spoilers.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
   - assets/custom.css
+  - assets/spoilers.css
 
 nav:
   - Stack: 
     - Introduction: "stack/index.md"
+    - Problems: "stack/problems.md"
