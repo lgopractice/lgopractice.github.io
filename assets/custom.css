@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "CT";
+  src: url("/assets/fonts/CT.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CT";
+  src: url("/assets/fonts/CT-Italic.otf");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CT";
+  src: url("/assets/fonts/CT-Bold.otf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "CT";
+  src: url("/assets/fonts/CT-Bold-Italic.otf");
+  font-style: italic;
+  font-weight: bold;
+}
+
+:root {
+  font-size: 20px;
+}
+
+.md-typeset code,
+.md-typeset .details pre > code
+.md-typeset .admonition .highlight code,
+.md-typeset .admonition pre > code,
+.md-typeset .details .highlight code,
+.highlighttable .linenos {
+    font-size: 0.6rem;
+}
