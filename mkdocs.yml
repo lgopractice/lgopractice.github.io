@@ -43,6 +43,7 @@ markdown_extensions:
       generic: true
   - attr_list
   - pymdownx.mark
+  - md_in_html
 
 extra_javascript:
   - assets/mathjax.js
@@ -61,3 +62,4 @@ nav:
       - Valid Parentheses: "stack/02.md"
       - Implement Queue using Two Stacks: "stack/03.md"
       - Implement Stack using Queues: "stack/04.md"
+      - Min/Max Stack: "stack/05.md"
