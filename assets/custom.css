@@ -58,6 +58,18 @@
   font-size: 20px;
 }
 
+/*
+  Force same text size in admonitions as regular paragraphs.
+*/
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.8rem;
+}
+
+
+/*
+  Force same monospace font size everywhere.
+*/
 .md-typeset code,
 .md-typeset .details pre > code
 .md-typeset .admonition .highlight code,
