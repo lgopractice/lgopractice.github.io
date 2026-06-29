@@ -19,7 +19,7 @@
 | 4 | [Implement Stack using Two Queues](04.md) | [225](https://leetcode.com/problems/implement-stack-using-queues/) | <span class="spoiler">Reverse of the above</span> |
 | 5 | [Min Stack](05.md) | [155](https://leetcode.com/problems/min-stack/) | <span class="spoiler">Tracking auxiliary state</span> |
 | 6 | [Backspace String Compare](06.md) | [844](https://leetcode.com/problems/backspace-string-compare/) | <span class="spoiler">Stack as a "running result"</span> |
-| 8 | Remove Outermost Parentheses | [1021](https://leetcode.com/problems/remove-outermost-parentheses/) | <span class="spoiler">Depth tracking</span> |
+| 7 | [Remove Outermost Parentheses](07.md) | [1021](https://leetcode.com/problems/remove-outermost-parentheses/) | <span class="spoiler">Depth tracking</span> |
 
 ---
 

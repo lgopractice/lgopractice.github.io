@@ -64,3 +64,4 @@ nav:
       - Implement Stack using Queues: "stack/04.md"
       - Min/Max Stack: "stack/05.md"
       - Backspace String Compare: "stack/06.md"
+      - Remove Outermost Parentheses: "stack/07.md"
