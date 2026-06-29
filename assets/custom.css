@@ -26,6 +26,34 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "ML";
+  src: url("/assets/fonts/ML.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ML";
+  src: url("/assets/fonts/ML-Italic.ttf");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ML";
+  src: url("/assets/fonts/ML-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ML";
+  src: url("/assets/fonts/ML-Bold-Italic.ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
 :root {
   font-size: 20px;
 }
