@@ -8,27 +8,29 @@
       
       
       
-        <link rel="canonical" href="https://lgopractice.github.io/">
+        <link rel="canonical" href="https://lgopractice.github.io/stack/08/">
       
+      
+        <link rel="prev" href="../07/">
       
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
-        <title>Algorithms & Data Structures</title>
+        <title>Next Greater Element I - Algorithms & Data Structures</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
   
@@ -57,11 +59,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/custom.css">
+      <link rel="stylesheet" href="../../assets/custom.css">
     
-      <link rel="stylesheet" href="assets/spoilers.css">
+      <link rel="stylesheet" href="../../assets/spoilers.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -86,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#next-greater-element-i" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +104,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Algorithms &amp; Data Structures" class="md-header__button md-logo" aria-label="Algorithms & Data Structures" data-md-component="logo">
+    <a href="../.." title="Algorithms &amp; Data Structures" class="md-header__button md-logo" aria-label="Algorithms & Data Structures" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -122,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              Next Greater Element I
             
           </span>
         </div>
@@ -226,7 +228,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Algorithms &amp; Data Structures" class="md-nav__button md-logo" aria-label="Algorithms & Data Structures" data-md-component="logo">
+    <a href="../.." title="Algorithms &amp; Data Structures" class="md-nav__button md-logo" aria-label="Algorithms & Data Structures" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -241,18 +243,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -273,7 +277,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -291,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="stack/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -319,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="stack/problems/" class="md-nav__link">
+      <a href="../problems/" class="md-nav__link">
         
   
   
@@ -394,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="stack/02/" class="md-nav__link">
+      <a href="../02/" class="md-nav__link">
         
   
   
@@ -422,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="stack/03/" class="md-nav__link">
+      <a href="../03/" class="md-nav__link">
         
   
   
@@ -450,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="stack/04/" class="md-nav__link">
+      <a href="../04/" class="md-nav__link">
         
   
   
@@ -478,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="stack/05/" class="md-nav__link">
+      <a href="../05/" class="md-nav__link">
         
   
   
@@ -506,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="stack/06/" class="md-nav__link">
+      <a href="../06/" class="md-nav__link">
         
   
   
@@ -534,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="stack/07/" class="md-nav__link">
+      <a href="../07/" class="md-nav__link">
         
   
   
@@ -567,18 +571,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" checked>
         
           
           <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
@@ -599,7 +605,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -614,10 +620,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="stack/08/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -633,6 +648,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -673,36 +689,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Commands
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project layout
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -718,21 +704,14 @@
 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<div class="language-text highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h1 id="next-greater-element-i">Next Greater Element I</h1>
+<p>The actual problem is unnecessarily convoluted. Essentially, given an array <span class="arithmatex">\(nums_2\)</span>, we are to find the <strong>next greater element</strong> (NGE) of specified numbers. </p>
+<p>Next greater element of some element <span class="arithmatex">\(x\)</span> is the first element <span class="arithmatex">\(e\)</span> to the right of <span class="arithmatex">\(x\)</span> such that <span class="arithmatex">\(x &lt; e\)</span>.</p>
+<p>The elements of <span class="arithmatex">\(nums_2\)</span> for which we need the NGE is specified in <span class="arithmatex">\(nums_1\)</span>.</p>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">fun</span><span class="w"> </span><span class="nf">nextGreaterElement</span><span class="p">(</span><span class="n">nums1</span><span class="p">:</span><span class="w"> </span><span class="n">IntArray</span><span class="p">,</span><span class="w"> </span><span class="n">nums2</span><span class="p">:</span><span class="w"> </span><span class="n">IntArray</span><span class="p">):</span><span class="w"> </span><span class="n">IntArray</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="c1">// Fill here</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span></code></pre></div>
 
 
 
@@ -782,14 +761,14 @@ docs/
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "content.code.annotate", "content.tooltips"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="assets/mathjax.js"></script>
+        <script src="../../assets/mathjax.js"></script>
       
-        <script src="assets/spoilers.js"></script>
+        <script src="../../assets/spoilers.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
