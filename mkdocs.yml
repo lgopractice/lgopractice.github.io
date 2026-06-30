@@ -67,3 +67,4 @@ nav:
       - Remove Outermost Parentheses: "stack/07.md"
     - Monotonic Stack:
       - Next Greater Element I: "stack/08.md"
+      - Next Greater Element II — circular array: "stack/09.md"

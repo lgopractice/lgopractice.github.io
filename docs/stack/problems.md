@@ -28,7 +28,7 @@
 | # | Problem | LC # | Pattern Focus |
 |---|---------|------|--------------|
 | 8 | [Next Greater Element I](08.md) | [496](https://leetcode.com/problems/next-greater-element-i/) | <span class="spoiler">Entry point to the pattern</span> |
-| 10 | Next Greater Element II — circular array | [503](https://leetcode.com/problems/next-greater-element-ii/) | <span class="spoiler">How to handle wrap-around</span> |
+| 9 | [Next Greater Element II — circular array](09.md) | [503](https://leetcode.com/problems/next-greater-element-ii/) | <span class="spoiler">How to handle wrap-around</span> |
 | 11 | Daily Temperatures | [739](https://leetcode.com/problems/daily-temperatures/) | <span class="spoiler">Variation on NGE</span> |
 | 12 | Previous Smaller Element | [GFG](https://www.geeksforgeeks.org/dsa/previous-smaller-element/) | <span class="spoiler">Left-pass mirror of NGE</span> |
 | 13 | Final Prices With a Special Discount | [1475](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | <span class="spoiler">NGE in disguise, easy warm-up</span> |
