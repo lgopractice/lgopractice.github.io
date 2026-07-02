@@ -77,4 +77,5 @@
 .md-typeset .details .highlight code,
 .highlighttable .linenos {
     font-size: 0.6rem;
+    font-variant-ligatures: common-ligatures;
 }
