@@ -27,7 +27,7 @@ theme:
     admonition:
       tip: material/lightning-bolt
   features:
-    - navigation.path # A breadcrumb navigation is rendered above the title of each page
+    - navigation.path # A breadcrumb navigation is rendered above the title of each page.
     - navigation.expand # Left sidebar will expand all collapsible subsections by default, so the user doesn't have to open subsections manually
     - navigation.footer  # Include links to the previous and next page of the current page
     - navigation.instant # Material for MkDocs now behaves like a Single Page Application
