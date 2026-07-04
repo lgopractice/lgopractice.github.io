@@ -79,3 +79,10 @@
     font-size: 0.6rem;
     font-variant-ligatures: common-ligatures;
 }
+
+/*
+  Make sidebars and tabs not so small.
+*/
+.md-nav, .md-typeset .tabbed-labels > label {
+  font-size: 0.75rem;
+}
