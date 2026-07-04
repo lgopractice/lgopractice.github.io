@@ -26,6 +26,13 @@ theme:
   icon:
     admonition:
       tip: material/lightning-bolt
+  features:
+    - navigation.path # A breadcrumb navigation is rendered above the title of each page
+    - navigation.expand # Left sidebar will expand all collapsible subsections by default, so the user doesn't have to open subsections manually
+    - navigation.footer  # Include links to the previous and next page of the current page
+    - navigation.instant # Material for MkDocs now behaves like a Single Page Application
+    - navigation.instant.prefetch # Start to fetch a page once the user hovers over a link
+    - navigation.instant.progress # Show indicator if the page hasn't finished loading after 400ms
 
 markdown_extensions:
   - pymdownx.highlight:
