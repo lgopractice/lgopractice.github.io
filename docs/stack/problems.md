@@ -32,7 +32,7 @@
 | 10 | [Daily Temperatures](10.md) | [739](https://leetcode.com/problems/daily-temperatures/) | <span class="spoiler">Variation on NGE</span> |
 | 11 | [Final Prices With a Special Discount](11.md) | [1475](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | <span class="spoiler">NGE in disguise, easy warm-up</span> |
 | 12 | [Next Greater Node in Linked List](12.md) | [1019](https://leetcode.com/problems/next-greater-node-in-linked-list/) | <span class="spoiler">Same pattern, different input structure</span> |
-| 15 | Online Stock Span | [901](https://leetcode.com/problems/online-stock-span/) | <span class="spoiler">Streaming / online version</span> |
+| 13 | [Online Stock Span](13.md) | [901](https://leetcode.com/problems/online-stock-span/) | <span class="spoiler">Streaming / online version</span> |
 | 16 | Buildings Facing Sun | [GFG](https://www.geeksforgeeks.org/dsa/buildings-facing-the-sun/) | <span class="spoiler">Right-pass monotonic variant</span> |
 | 17 | Sum of Subarray Minimums | [907](https://leetcode.com/problems/sum-of-subarray-minimums/) | <span class="spoiler">Contribution of each element</span> |
 | 18 | Maximum Width Ramp | [962](https://leetcode.com/problems/maximum-width-ramp/) | <span class="spoiler">Two-pass non-obvious application</span> |
