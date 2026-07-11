@@ -34,7 +34,7 @@
 | 12 | [Next Greater Node in Linked List](12.md) | [1019](https://leetcode.com/problems/next-greater-node-in-linked-list/) | <span class="spoiler">Same pattern, different input structure</span> |
 | 13 | [Online Stock Span](13.md) | [901](https://leetcode.com/problems/online-stock-span/) | <span class="spoiler">Streaming / online version</span> |
 | 14 | [Buildings Facing Sun](14.md) | [GFG](https://www.geeksforgeeks.org/dsa/number-buildings-facing-sun/) | <span class="spoiler">Right-pass monotonic variant</span> |
-| 17 | Sum of Subarray Minimums | [907](https://leetcode.com/problems/sum-of-subarray-minimums/) | <span class="spoiler">Contribution of each element</span> |
+| 15 | [Sum of Subarray Minimums](15.md) | [907](https://leetcode.com/problems/sum-of-subarray-minimums/) | <span class="spoiler">Contribution of each element</span> |
 | 18 | Maximum Width Ramp | [962](https://leetcode.com/problems/maximum-width-ramp/) | <span class="spoiler">Two-pass non-obvious application</span> |
 | 19 | Largest Rectangle in Histogram | [84](https://leetcode.com/problems/largest-rectangle-in-histogram/) | <span class="spoiler">The canonical hard monotonic problem</span> |
 | 20 | Maximal Rectangle in Binary Matrix | [85](https://leetcode.com/problems/maximal-rectangle/) | <span class="spoiler">Problem 19 applied 2-dimensionally</span> |
