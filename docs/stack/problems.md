@@ -30,7 +30,7 @@
 | 8 | [Next Greater Element I](08.md) | [496](https://leetcode.com/problems/next-greater-element-i/) | <span class="spoiler">Entry point to the pattern</span> |
 | 9 | [Next Greater Element II — circular array](09.md) | [503](https://leetcode.com/problems/next-greater-element-ii/) | <span class="spoiler">How to handle wrap-around</span> |
 | 10 | [Daily Temperatures](10.md) | [739](https://leetcode.com/problems/daily-temperatures/) | <span class="spoiler">Variation on NGE</span> |
-| 11 | Final Prices With a Special Discount | [1475](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | <span class="spoiler">NGE in disguise, easy warm-up</span> |
+| 11 | [Final Prices With a Special Discount](11.md) | [1475](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | <span class="spoiler">NGE in disguise, easy warm-up</span> |
 | 14 | Next Greater Node in Linked List | [1019](https://leetcode.com/problems/next-greater-node-in-linked-list/) | <span class="spoiler">Same pattern, different input structure</span> |
 | 15 | Online Stock Span | [901](https://leetcode.com/problems/online-stock-span/) | <span class="spoiler">Streaming / online version</span> |
 | 16 | Buildings Facing Sun | [GFG](https://www.geeksforgeeks.org/dsa/buildings-facing-the-sun/) | <span class="spoiler">Right-pass monotonic variant</span> |
