@@ -62,6 +62,8 @@ extra_css:
   - assets/spoilers.css
 
 nav:
+  - Patterns:
+    - Monotonic Stack: "patterns/monotonic-stack.md"
   - Stack: 
     - Introduction: "stack/index.md"
     - Problems: "stack/problems.md"
@@ -73,6 +75,7 @@ nav:
       - Backspace String Compare: "stack/06.md"
       - Remove Outermost Parentheses: "stack/07.md"
     - Monotonic Stack:
+      - Monotonic Stack: "stack/monotonic-stack.md"
       - Next Greater Element I: "stack/08.md"
       - Next Greater Element II — circular array: "stack/09.md"
       - Daily Temperatures: "stack/10.md"
