@@ -1,0 +1,22 @@
+/* Base spoiler styling (hidden state) */
+.spoiler {
+  background-color: var(--md-default-fg-color--light);
+  color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  user-select: none; /* Prevents accidental highlighting while hidden */
+}
+
+/* Hover effect so users know it's clickable */
+.spoiler:hover {
+  background-color: var(--md-default-fg-color--lighter);
+}
+
+/* Revealed state */
+.spoiler.revealed {
+  background-color: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+  user-select: auto; 
+}

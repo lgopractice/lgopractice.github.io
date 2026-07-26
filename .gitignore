@@ -1,0 +1,35 @@
+# Zensical / MkDocs Build Output
+site/
+build/
+*site.tar.gz
+
+# Conda & Python Environments
+.conda/
+envs/
+env/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+*.whl
+
+# Jupyter / Conda Notebook Checkpoints (if used for docs)
+.ipynb_checkpoints/
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
