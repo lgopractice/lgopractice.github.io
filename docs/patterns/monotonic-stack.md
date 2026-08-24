@@ -1,1 +1,0 @@
-../stack/monotonic-stack.md
