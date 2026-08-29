@@ -70,7 +70,14 @@ nav = [
         "stack/15.md",
         "stack/16.md",
       ]},
-    ]}
+    ]},
+  {"Linear Algebra" = [
+      "linear-algebra/intro.md",
+  ]},
+  {"Practice" = [
+    "practice/0001.md",
+    "practice/0002.md",
+  ]}
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
