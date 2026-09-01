@@ -265,3 +265,68 @@ ax.arrow(0, 0, lw[0], lw[1],
 </div>
 
 </div>
+
+## Vector Broadcasting in Python
+
+Vector broadcasting essentially means to repeat an operation multiple times between one vector and each element of another vector. Consider the following series of equations:
+
+$$
+\begin{align}
+    \begin{bmatrix}1 & 1\end{bmatrix} &+ \begin{bmatrix}10 & 20\end{bmatrix} \\
+    \begin{bmatrix}2 & 2\end{bmatrix} &+ \begin{bmatrix}10 & 20\end{bmatrix} \\
+    \begin{bmatrix}3 & 3\end{bmatrix} &+ \begin{bmatrix}10 & 20\end{bmatrix} \\
+\end{align}
+$$
+
+we can impelemnt this set of equation more compactly by condensing these into vector $[1, 2, 3]$ and $[10, 20]$, and then broadcasting the addition:
+
+<div markdown class="grid">
+
+<div markdown>
+```python linenums="1"
+a = np.array([[1, 2, 3]]).T
+b = np.array([[10, 20]])
+print(a + b)
+```
+
+```
+[[11 21]
+ [12 22]
+ [13 23]]
+```
+</div>
+
+<div markdown>
+$$
+\begin{bmatrix}1 \\ 2 \\ 3\end{bmatrix} + \begin{bmatrix}10 & 20\end{bmatrix}
+$$
+</div>
+
+</div>
+
+## Vector Magnitude and Unit Vector
+
+The magnitude of a vector, also called the _geometric length_ or the _norm_ is the distance from tail to the head of a vector.
+
+<div markdown class="grid">
+
+<div markdown>
+```python linenums="1"
+a = np.array([4, 3])
+print(np.linalg.norm(a)) // 5.0
+```
+</div>
+
+<div markdown>
+$$
+|| \mathbf v || = \sqrt{\sum v_i^2}
+$$
+</div>
+
+</div>
+
+A unit vector is defined as $|| \mathbf v || = 1$. Fundamentally any nonunit vector has an associated unit vector.
+
+$$
+\hat{\mathbf v} = \dfrac{1}{|| \mathbf v ||} \mathbf v
+$$
