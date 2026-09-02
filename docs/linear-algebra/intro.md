@@ -278,7 +278,7 @@ $$
 \end{align}
 $$
 
-we can impelemnt this set of equation more compactly by condensing these into vector $[1, 2, 3]$ and $[10, 20]$, and then broadcasting the addition:
+we can implement this set of equation more compactly by condensing these into vector $[1, 2, 3]$ and $[10, 20]$, and then broadcasting the addition:
 
 <div markdown class="grid">
 

@@ -313,7 +313,7 @@ features = [
 # a monospaced font used in code blocks.
 # ----------------------------------------------------------------------------
 [project.theme.font]
-text = "CT"
+text = "Arbutus Slab"
 code = "ML"
 
 # ----------------------------------------------------------------------------

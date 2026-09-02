@@ -55,7 +55,7 @@
 }
 
 :root {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /*
@@ -76,7 +76,7 @@
 .md-typeset .admonition pre > code,
 .md-typeset .details .highlight code,
 .highlighttable .linenos {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-variant-ligatures: common-ligatures;
 }
 
@@ -84,5 +84,5 @@
   Make sidebars and tabs not so small.
 */
 .md-nav, .md-typeset .tabbed-labels > label {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
