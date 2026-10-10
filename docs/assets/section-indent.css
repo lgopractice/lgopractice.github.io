@@ -1,0 +1,5 @@
+/* Indent items under top-level section headers (EPI, Data-Structures, etc.) */
+.md-nav__item--section > .md-nav__list,
+.md-nav__item--section > nav > .md-nav__list {
+  margin-left: 1rem; /* Adjust this value (e.g., 0.75rem or 1.25rem) to get the exact indent you want */
+}

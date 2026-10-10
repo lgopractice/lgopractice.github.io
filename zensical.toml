@@ -44,33 +44,39 @@ copyright = """
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-  {"Patterns" = [
-      "patterns/monotonic-stack.md",
+  {"Data-Structures" = [
+    {"Numbers" = [
+      "data-structures/numbers/representation.md",
+      "data-structures/numbers/bit-tricks.md",
+      {"Problems" = [
+        "data-structures/numbers/epi/5.1.md"
+      ]},
     ]},
-  {"Stack" = [
-      "stack/index.md",
-      "stack/01-problems.md",
+    {"Stack" = [
+      "data-structures/stack/index.md",
+      "data-structures/stack/01-problems.md",
       {"Foundations" = [
-        "stack/02.md",
-        "stack/03.md",
-        "stack/04.md",
-        "stack/05.md",
-        "stack/06.md",
-        "stack/07.md",
+        "data-structures/stack/02.md",
+        "data-structures/stack/03.md",
+        "data-structures/stack/04.md",
+        "data-structures/stack/05.md",
+        "data-structures/stack/06.md",
+        "data-structures/stack/07.md",
       ]},
       {"Monotonic Stack" = [
-        { "Introduction" = "stack/monotonic-stack.md" },
-        "stack/08.md",
-        "stack/09.md",
-        "stack/10.md",
-        "stack/11.md",
-        "stack/12.md",
-        "stack/13.md",
-        "stack/14.md",
-        "stack/15.md",
-        "stack/16.md",
+        { "Introduction" = "data-structures/stack/monotonic-stack.md" },
+        "data-structures/stack/08.md",
+        "data-structures/stack/09.md",
+        "data-structures/stack/10.md",
+        "data-structures/stack/11.md",
+        "data-structures/stack/12.md",
+        "data-structures/stack/13.md",
+        "data-structures/stack/14.md",
+        "data-structures/stack/15.md",
+        "data-structures/stack/16.md",
       ]},
     ]},
+  ]},
   {"Linear Algebra" = [
       "linear-algebra/intro.md",
   ]},
@@ -89,8 +95,9 @@ nav = [
 # Read more: https://zensical.org/docs/customization/#additional-css
 #
 extra_css = [
-  "assets/fonts.css",
+  "assets/fonts/fonts.css",
   "assets/spoiler.css",
+  "assets/section-indent.css",
 ]
 
 # With the `extra_javascript` option you can add your own JavaScript to your
@@ -313,7 +320,7 @@ features = [
 # a monospaced font used in code blocks.
 # ----------------------------------------------------------------------------
 [project.theme.font]
-text = "Arbutus Slab"
+text = "Briskpace"
 code = "ML"
 
 # ----------------------------------------------------------------------------

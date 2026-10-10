@@ -1,57 +1,57 @@
 @font-face {
-  font-family: "CT";
-  src: url("/assets/fonts/CT.otf");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "CT";
-  src: url("/assets/fonts/CT-Italic.otf");
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "CT";
-  src: url("/assets/fonts/CT-Bold.otf");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "CT";
-  src: url("/assets/fonts/CT-Bold-Italic.otf");
-  font-style: italic;
-  font-weight: bold;
-}
-
-@font-face {
   font-family: "ML";
-  src: url("/assets/fonts/ML.ttf");
+  src: url("/assets/fonts/ml/ML.ttf");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ML";
-  src: url("/assets/fonts/ML-Italic.ttf");
+  src: url("/assets/fonts/ml/ML-Italic.ttf");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ML";
-  src: url("/assets/fonts/ML-Bold.ttf");
+  src: url("/assets/fonts/ml/ML-Bold.ttf");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "ML";
-  src: url("/assets/fonts/ML-Bold-Italic.ttf");
+  src: url("/assets/fonts/ml/ML-Bold-Italic.ttf");
   font-style: italic;
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "Briskpace";
+  src: url("/assets/fonts/briskpace/Briskpace.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Briskpace";
+  src: url("/assets/fonts/briskpace/BriskpaceItalic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Briskpace";
+  src: url("/assets/fonts/briskpace/BriskpaceBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Briskpace";
+  src: url("/assets/fonts/briskpace/BriskpaceBoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
 }
 
 :root {
