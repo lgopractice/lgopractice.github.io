@@ -49,7 +49,8 @@ nav = [
       "data-structures/numbers/representation.md",
       "data-structures/numbers/bit-tricks.md",
       {"Problems" = [
-        "data-structures/numbers/epi/5.1.md"
+        "data-structures/numbers/epi/5.1.md",
+        "data-structures/numbers/epi/5.2.md",
       ]},
     ]},
     {"Stack" = [
