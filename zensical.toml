@@ -53,6 +53,7 @@ nav = [
         "data-structures/numbers/epi/5.2.md",
         "data-structures/numbers/epi/5.3.md",
         "data-structures/numbers/epi/5.4.md",
+        "data-structures/numbers/epi/5.5.md",
       ]},
     ]},
     {"Stack" = [
