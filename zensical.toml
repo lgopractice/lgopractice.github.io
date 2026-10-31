@@ -87,6 +87,7 @@ nav = [
   {"Practice" = [
     "practice/0001.md",
     "practice/0002.md",
+    "practice/0003.md",
   ]}
 ]
 
